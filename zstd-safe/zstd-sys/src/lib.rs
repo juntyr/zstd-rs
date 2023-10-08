@@ -6,8 +6,8 @@
 //!
 //! [zstd]: https://facebook.github.io/zstd/
 
-#[cfg(target_arch = "wasm32")]
-mod wasm_shim;
+// #[cfg(target_arch = "wasm32")]
+// mod wasm_shim;
 
 // If running bindgen, we'll end up with the correct bindings anyway.
 #[cfg(feature = "bindgen")]

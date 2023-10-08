@@ -138,10 +138,10 @@ fn compile_zstd() {
     });
 
     if need_wasm_shim {
-        cargo_print(&"rerun-if-changed=wasm-shim/stdlib.h");
-        cargo_print(&"rerun-if-changed=wasm-shim/string.h");
+        // cargo_print(&"rerun-if-changed=wasm-shim/stdlib.h");
+        // cargo_print(&"rerun-if-changed=wasm-shim/string.h");
 
-        config.include("wasm-shim/");
+        // config.include("wasm-shim/");
         config.define("XXH_STATIC_ASSERT", Some("0"));
     }
 
