@@ -49,7 +49,7 @@ pub extern "C" fn test_compress() -> bool {
     zstd_check!(dsize);
     assert_eq!(dsize, rsize);
 
-    &fbuf[..] == &rbuf[..]
+    fbuf[..] == rbuf[..]
 }
 
 fn main() {}
